@@ -1,0 +1,8 @@
+import type { Portal, UserRole } from './types'
+
+export const portals: Record<UserRole, Portal> = {
+  student: { role: 'student', title: 'بوابة الطالب', shortRole: 'طالب', icon: '⌁', accent: 'student', description: 'موادك، واجباتك وتقدّمك الدراسي', dashboardTitle: 'أهلًا بك يا أحمد', avatar: 'أ', navigation: ['الرئيسية', 'موادي الدراسية', 'الواجبات والأنشطة', 'التنبيهات', 'تقدّمي الدراسي'], permissionMessage: 'يمكنك الوصول إلى مقرراتك وواجباتك وتنبيهاتك التعليمية.' },
+  teacher: { role: 'teacher', title: 'بوابة المعلم', shortRole: 'معلم', icon: '✎', accent: 'teacher', description: 'مقرراتك، صفوفك ومتابعة طلابك', dashboardTitle: 'أهلًا أستاذة سارة', avatar: 'س', navigation: ['لوحة التحكم', 'المقررات الدراسية', 'الصفوف والطلاب', 'الواجبات والأنشطة', 'التقييمات والملاحظات'], permissionMessage: 'يمكنك إدارة مقرراتك وطلابك والمهام المكلّف بها.' },
+  parent: { role: 'parent', title: 'بوابة ولي الأمر', shortRole: 'ولي أمر', icon: '♡', accent: 'parent', description: 'اطّلع على رحلة ابنك التعليمية', dashboardTitle: 'أهلًا بك يا ولي الأمر', avatar: 'و', navigation: ['الرئيسية', 'أبنائي', 'التقدّم والدرجات', 'الواجبات والأنشطة', 'ملاحظات المعلمين'], permissionMessage: 'يمكنك متابعة معلومات الطالب المرتبط بحسابك فقط.' },
+  activities: { role: 'activities', title: 'الأنشطة والواجبات', shortRole: 'منسق أنشطة', icon: '◌', accent: 'activities', description: 'إنشاء ومتابعة كل المهام التعليمية', dashboardTitle: 'أهلًا بك في الأنشطة', avatar: 'ن', navigation: ['لوحة الأنشطة', 'كل الواجبات', 'إنشاء نشاط', 'الطلاب المستهدفون', 'الحالات الخاصة'], permissionMessage: 'يمكنك إدارة الأنشطة والواجبات ضمن نطاق الصلاحيات الممنوحة.' }
+}
