@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "scripts": { "dev": "vite", "build": "tsc -b && vite build", "preview": "vite preview", "api": "tsx watch server/src/index.ts", "api:start": "tsx server/src/index.ts", "check:api": "tsc -p server/tsconfig.json --noEmit" },
+  "scripts": { "dev": "vite", "build": "tsc -b && vite build", "preview": "vite preview", "api": "tsx watch server/src/index.ts", "api:start": "tsx server/src/index.ts", "check:api": "tsc -p server/tsconfig.json --noEmit", "db:check": "tsx server/scripts/db-check.ts", "seed:demo": "tsx server/scripts/seed-demo.ts" },
   "dependencies": { "@fastify/cors": "latest", "@supabase/supabase-js": "latest", "@vitejs/plugin-react": "latest", "dotenv": "latest", "fastify": "latest", "vite": "latest", "typescript": "latest", "react": "latest", "react-dom": "latest" },
   "devDependencies": { "@types/node": "latest", "@types/react": "latest", "@types/react-dom": "latest", "tsx": "latest" }
 }

@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url'
 // Local development keeps backend secrets in server/.env. In production,
 // platform-provided environment variables take precedence and dotenv does not overwrite them.
 const currentDirectory = dirname(fileURLToPath(import.meta.url))
-config({ path: resolve(currentDirectory, '../.env') })
+config({ path: resolve(currentDirectory, '../.env'), quiet: true })
 
 function required(name: string): string {
   const value = process.env[name]
